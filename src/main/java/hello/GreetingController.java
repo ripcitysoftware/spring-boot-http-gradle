@@ -16,4 +16,9 @@ public class GreetingController {
         return new Greeting(counter.incrementAndGet(),
                             String.format(template, name));
     }
+
+    @RequestMapping("/hello")
+    public Greeting hello() {
+        throw new RuntimeException("Wrong greeting!");
+    }
 }
