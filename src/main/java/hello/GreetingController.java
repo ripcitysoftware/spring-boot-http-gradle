@@ -19,6 +19,7 @@ public class GreetingController {
 
     @RequestMapping("/hello")
     public Greeting hello() {
+        System.out.printf("Logging message to stdout");
         throw new RuntimeException("Wrong greeting!");
     }
 }
