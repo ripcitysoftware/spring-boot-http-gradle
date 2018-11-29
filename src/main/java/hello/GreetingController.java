@@ -19,7 +19,7 @@ public class GreetingController {
 
     @RequestMapping("/hello")
     public Greeting hello() {
-        System.out.printf("Logging message to stdout");
+        System.out.printf("Logging message to stdout, with Jenkins integration to syslog");
         throw new RuntimeException("Wrong greeting!");
     }
 }
